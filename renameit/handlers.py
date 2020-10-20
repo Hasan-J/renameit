@@ -25,8 +25,8 @@ class RegexFileNameHandler(FileNameHandler):
 
     def process(self, file_name):
         match = self.regex_pattern.match(string=file_name)
+        string_formatter_dict = dict()
         if match is not None:
-            string_formatter_dict = dict()
             for group_name, group_value in match.groupdict().items():
 
                 if group_name in self.regex_config["groups"].keys():
