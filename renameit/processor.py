@@ -2,12 +2,15 @@ import pathlib
 import shutil
 from .handlers import FileNameHandler
 
+import logging
+
 
 class Processor(object):
     def __init__(
         self,
         dir_path,
         file_name_handler: FileNameHandler,
+        keep_original=True,
         backup_dir=None,
         renamed_dir=None,
         keep_tree_structure=True,
@@ -15,6 +18,7 @@ class Processor(object):
     ):
         self.dir_path = dir_path
         self.file_name_handler = file_name_handler
+        self.keep_original = keep_original
         self.backup_dir = backup_dir
         self.renamed_dir = renamed_dir
         self.keep_tree_structure = keep_tree_structure
@@ -41,9 +45,13 @@ class Processor(object):
         if self.renamed_dir is not None:
             self.renamed_dir = pathlib.Path(self.renamed_dir)
             new_file_path = self.gork_target(self.renamed_dir, new_file_path)
+            new_file_path.parent.mkdir(parents=True, exist_ok=True)
 
-        print(f"Renaming {old_file_path} to {new_file_path}")
-        old_file_path.rename(new_file_path)
+        logging.debug(f"Renaming {old_file_path} to {new_file_path}")
+        if self.keep_original:
+            shutil.copyfile(str(old_file_path), str(new_file_path))
+        else:
+            old_file_path.rename(new_file_path)
 
     def backup(self, file_path):
         if self.backup_dir is not None:
