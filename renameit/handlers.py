@@ -1,4 +1,7 @@
+import json
 import re
+
+from botocore import args
 
 
 class FileNameHandler(object):
@@ -7,8 +10,12 @@ class FileNameHandler(object):
 
 
 class RegexFileNameHandler(FileNameHandler):
-    def __init__(self, regex_config, case_sensitive=True):
-        self.regex_config = regex_config
+    def __init__(self, regex_config, case_sensitive=True, *args, **kwargs):
+        if isinstance(regex_config, dict):
+            self.regex_config = regex_config
+        else:
+            with open(regex_config, "r") as _f:
+                self.regex_config = json.loads(_f.read())
         self.case_sensitive = case_sensitive
         if self.case_sensitive:
             self.regex_pattern = re.compile(self.regex_config["regex_pattern"])
