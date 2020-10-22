@@ -1,67 +1,89 @@
-import pathlib
-import shutil
-from .handlers import FileNameHandler
-
 import logging
+import pathlib
 
 
 class Processor(object):
     def __init__(
         self,
-        dir_path,
-        file_name_handler: FileNameHandler,
+        source_container,
+        file_name_handler,
+        file_manager,
+        target_container=None,
+        error_container=None,
+        idle_container=None,
+        source_prefix=None,
+        target_prefix="renameit_target",
+        errors_prefix="renameit_errors",
+        idle_prefix=None,
         keep_original=True,
-        backup_dir=None,
-        renamed_dir=None,
         keep_tree_structure=True,
-        recursive=False,
+        report_idle=False,
     ):
-        self.dir_path = dir_path
-        self.file_name_handler = file_name_handler
+
+        self.file_name_handler = file_name_handler()
+        self.file_manager = file_manager()
+
+        self.source_container = source_container
+        self.target_container = target_container or source_container
+        self.error_container = error_container or source_container
+        self.idle_container = idle_container
+        self.source_prefix = source_prefix
+        self.target_prefix = target_prefix
+        self.errors_prefix = errors_prefix
+        self.idle_prefix = idle_prefix
         self.keep_original = keep_original
-        self.backup_dir = backup_dir
-        self.renamed_dir = renamed_dir
         self.keep_tree_structure = keep_tree_structure
-        self.recursive = recursive
-
-    def scan_dir(self):
-        glob_pattern = "*"
-        if self.recursive:
-            glob_pattern = "**/*"
-
-        return pathlib.Path(self.dir_path).glob(glob_pattern)
+        self.report_idle = report_idle
 
     def process(self):
-        for file_path in self.scan_dir():
-            if file_path.is_file():
-                renamed_file_name = self.file_name_handler.process(file_path.name)
-                renamed_file_path = file_path.parent / renamed_file_name
+        for source_file_path in self.file_manager.list_files(
+            self.source_container, prefix=self.source_prefix
+        ):
+            source_file_path = pathlib.Path(source_file_path)
+            source_file_name = source_file_path.name
+            try:
+                target_file_name = self.file_name_handler.process(source_file_path.name)
+            except Exception as identifier:
+                # TODO move to errors container and log
+                continue
 
-                if file_path != renamed_file_path:
-                    self.backup(file_path)
-                    self.rename(file_path, renamed_file_path)
+            if source_file_name != target_file_name:
+                if self.keep_tree_structure:
+                    target_file_path = source_file_path.parent / target_file_name
+                else:
+                    target_file_path = target_file_name
 
-    def rename(self, old_file_path, new_file_path):
-        if self.renamed_dir is not None:
-            self.renamed_dir = pathlib.Path(self.renamed_dir)
-            new_file_path = self.gork_target(self.renamed_dir, new_file_path)
-            new_file_path.parent.mkdir(parents=True, exist_ok=True)
+                if self.target_prefix:
+                    target_file_path = (
+                        pathlib.Path(self.target_prefix) / target_file_path
+                    )
 
-        logging.debug(f"Renaming {old_file_path} to {new_file_path}")
-        if self.keep_original:
-            shutil.copyfile(str(old_file_path), str(new_file_path))
-        else:
-            old_file_path.rename(new_file_path)
+                try:
+                    if self.keep_original:
+                        print(
+                            f"Copying: {self.source_container}/{source_file_path} to "
+                            + f"{self.target_container}/{target_file_path}"
+                        )
+                        self.file_manager.copy_file(
+                            source_container=self.source_container,
+                            source_file_name=str(source_file_path),
+                            target_container=self.target_container,
+                            target_file_name=str(target_file_path),
+                        )
+                    else:
+                        raise NotImplementedError("Moving file not yet implemented")
 
-    def backup(self, file_path):
-        if self.backup_dir is not None:
-            self.backup_dir = pathlib.Path(self.backup_dir)
-            backup_file_path = self.gork_target(self.backup_dir, file_path)
-            backup_file_path.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(str(file_path), str(backup_file_path))
-
-    def gork_target(self, target_dir, file_path):
-        if self.keep_tree_structure:
-            return target_dir / file_path.relative_to(self.dir_path)
-        else:
-            return target_dir / file_path.name
+                except Exception as identifier:
+                    # TODO move to errors container and log
+                    raise identifier
+            else:
+                if self.idle_container:
+                    if self.idle_prefix:
+                        self.file_manager.copy_file(
+                            source_container=self.source_container,
+                            source_file_name=str(source_file_path),
+                            target_container=self.idle_container,
+                            target_file_name=str(
+                                pathlib.Path(self.idle_prefix) / source_file_path.name
+                            ),
+                        )
