@@ -1,0 +1,6 @@
+FROM python:3.10.4-slim-bullseye
+
+COPY dist /tmp/dist
+
+RUN pip install --disable-pip-version-check --no-cache-dir --find-links=/tmp/dist renameit \
+    && rm -r /tmp/dist

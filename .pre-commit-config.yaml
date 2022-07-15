@@ -1,3 +1,6 @@
+default_language_version:
+    python: python3.10
+
 repos:
 -   repo: https://github.com/ambv/black
     rev: 22.3.0
@@ -9,12 +12,18 @@ repos:
     hooks:
     - id: flake8
 
--   repo: https://github.com/pycqa/pylint
-    rev: v2.13.5
+-   repo: https://github.com/pycqa/isort
+    rev: 5.10.1
     hooks:
-    - id: pylint
+    - id: isort
+      args: ["--profile", "black"]
 
--   repo: https://github.com/pycqa/bandit
-    rev: 1.7.4
+-   repo: local
     hooks:
-    - id: bandit
+    - id: mypy
+      name: mypy
+      entry: "./scripts/run_mypy"
+      language: system
+      types: [python]
+      require_serial: true
+      verbose: true
