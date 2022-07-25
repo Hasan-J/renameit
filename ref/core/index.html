@@ -1,0 +1,1686 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Core - renameit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#core" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="renameit" class="md-header__button md-logo" aria-label="renameit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            renameit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Core
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="renameit" class="md-nav__button md-logo" aria-label="renameit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    renameit
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Core
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Core
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#renameit.core.cli" class="md-nav__link">
+    cli
+  </a>
+  
+    <nav class="md-nav" aria-label="cli">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.cli.renameit" class="md-nav__link">
+    renameit()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameit.core.job_runners" class="md-nav__link">
+    job_runners
+  </a>
+  
+    <nav class="md-nav" aria-label="job_runners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.Job" class="md-nav__link">
+    Job
+  </a>
+  
+    <nav class="md-nav" aria-label="Job">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.Job.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.JobRunnerStandard" class="md-nav__link">
+    JobRunnerStandard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    Config
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project" class="md-nav__link">
+    project
+  </a>
+  
+    <nav class="md-nav" aria-label="project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.FileSystemConfig" class="md-nav__link">
+    FileSystemConfig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.JobConfig" class="md-nav__link">
+    JobConfig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.ProjectConfig" class="md-nav__link">
+    ProjectConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="ProjectConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.ProjectConfig.get_jobs" class="md-nav__link">
+    get_jobs()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.RenameHandlerConfig" class="md-nav__link">
+    RenameHandlerConfig
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.parse" class="md-nav__link">
+    parse
+  </a>
+  
+    <nav class="md-nav" aria-label="parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.parse.load_config" class="md-nav__link">
+    load_config()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_systems/" class="md-nav__link">
+        FileSystems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handlers/" class="md-nav__link">
+        Handlers
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#renameit.core.cli" class="md-nav__link">
+    cli
+  </a>
+  
+    <nav class="md-nav" aria-label="cli">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.cli.renameit" class="md-nav__link">
+    renameit()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renameit.core.job_runners" class="md-nav__link">
+    job_runners
+  </a>
+  
+    <nav class="md-nav" aria-label="job_runners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.Job" class="md-nav__link">
+    Job
+  </a>
+  
+    <nav class="md-nav" aria-label="Job">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.Job.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.job_runners.JobRunnerStandard" class="md-nav__link">
+    JobRunnerStandard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    Config
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project" class="md-nav__link">
+    project
+  </a>
+  
+    <nav class="md-nav" aria-label="project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.FileSystemConfig" class="md-nav__link">
+    FileSystemConfig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.JobConfig" class="md-nav__link">
+    JobConfig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.ProjectConfig" class="md-nav__link">
+    ProjectConfig
+  </a>
+  
+    <nav class="md-nav" aria-label="ProjectConfig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.ProjectConfig.get_jobs" class="md-nav__link">
+    get_jobs()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.project.RenameHandlerConfig" class="md-nav__link">
+    RenameHandlerConfig
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.parse" class="md-nav__link">
+    parse
+  </a>
+  
+    <nav class="md-nav" aria-label="parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renameit.core.config.parse.load_config" class="md-nav__link">
+    load_config()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="core">Core<a class="headerlink" href="#core" title="Permanent link">#</a></h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<h2 id="renameit.core.cli" class="doc doc-heading">
+          <code>cli</code>
+
+
+<a href="#renameit.core.cli" class="headerlink" title="Permanent link">#</a></h2>
+
+  <div class="doc doc-contents first">
+  
+      <p>Main module to expose internal functions as command lines.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="renameit.core.cli.renameit" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">renameit</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_dir</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#renameit.core.cli.renameit" class="headerlink" title="Permanent link">#</a></h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>This is the main API that is used to trigger renaming jobs.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>config_path</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td><p>File path to configs overriding the default path. Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>config_dir</code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td><p>Dir path to other config files if needed. Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>renameit/core/cli.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">renameit</span><span class="p">(</span><span class="n">config_path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">config_dir</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;This is the main API that is used to trigger renaming jobs.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        config_path: File path to configs overriding the default path. Defaults to None.</span>
+<span class="sd">        config_dir: Dir path to other config files if needed. Defaults to None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">ProjectConfig</span><span class="o">.</span><span class="n">create_new</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">config_dir</span><span class="o">=</span><span class="n">config_dir</span><span class="p">)</span>
+
+    <span class="n">job_runner</span> <span class="o">=</span> <span class="n">JobRunnerStandard</span><span class="p">(</span><span class="n">jobs</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">get_jobs</span><span class="p">())</span>
+
+    <span class="n">job_runner</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+
+<h2 id="renameit.core.job_runners" class="doc doc-heading">
+          <code>job_runners</code>
+
+
+<a href="#renameit.core.job_runners" class="headerlink" title="Permanent link">#</a></h2>
+
+  <div class="doc doc-contents first">
+  
+      <p>This module contains job runner classes that will run the renaming jobs</p>
+<p>The module contains the following:</p>
+<ul>
+<li><code>Job</code> - Class representing renaming job.</li>
+<li><code>JobRunnerStandard</code> - Implementation for standard job runner.</li>
+</ul>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="renameit.core.job_runners.Job" class="doc doc-heading">
+        <code>Job</code>
+
+
+<a href="#renameit.core.job_runners.Job" class="headerlink" title="Permanent link">#</a></h3>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>The job class that contains the processing details. Providing the central point
+for file systems and handlers interactions.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Name of the job.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>file_system</code></td>
+          <td>
+                <code><span title="renameit.file_systems.interfaces.IFileSystem">IFileSystem</span></code>
+          </td>
+          <td><p>Which file system to use.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>rename_handler</code></td>
+          <td>
+                <code><span title="renameit.handlers.interfaces.IHandler">IHandler</span></code>
+          </td>
+          <td><p>Which renaming handler to use.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>operation</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>What operation to do on the matched files,
+            accepted values are (rename, copy) case sensitive.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/job_runners.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Job</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;The job class that contains the processing details. Providing the central point</span>
+<span class="sd">    for file systems and handlers interactions.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): Name of the job.</span>
+<span class="sd">        file_system (IFileSystem): Which file system to use.</span>
+<span class="sd">        rename_handler (IHandler): Which renaming handler to use.</span>
+<span class="sd">        operation (str): What operation to do on the matched files,</span>
+<span class="sd">                        accepted values are (rename, copy) case sensitive.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">file_system</span><span class="p">:</span> <span class="n">IFileSystem</span><span class="p">,</span>
+        <span class="n">rename_handler</span><span class="p">:</span> <span class="n">IHandler</span><span class="p">,</span>
+        <span class="n">operation</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="p">):</span>
+
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">file_system</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">copy_object</span> <span class="o">==</span> <span class="n">IFileSystem</span><span class="o">.</span><span class="n">copy_object</span>
+            <span class="ow">and</span> <span class="n">operation</span> <span class="o">==</span> <span class="s2">&quot;copy_object&quot;</span>
+        <span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;FileSystem type `</span><span class="si">{</span><span class="n">file_system</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">` does not support copying objects.&quot;</span>
+            <span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">file_system</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">rename_object</span> <span class="o">==</span> <span class="n">IFileSystem</span><span class="o">.</span><span class="n">rename_object</span>
+            <span class="ow">and</span> <span class="n">operation</span> <span class="o">==</span> <span class="s2">&quot;rename_object&quot;</span>
+        <span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;FileSystem type `</span><span class="si">{</span><span class="n">file_system</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">` does not support renaming objects.&quot;</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_system</span> <span class="o">=</span> <span class="n">file_system</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rename_handler</span> <span class="o">=</span> <span class="n">rename_handler</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">operation</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A job needs to run at some point.&quot;&quot;&quot;</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running job </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">file_obj</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_system</span><span class="o">.</span><span class="n">list_objects</span><span class="p">():</span>
+            <span class="n">new_file_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rename_handler</span><span class="o">.</span><span class="n">get_new_name</span><span class="p">(</span><span class="n">file_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">file_obj</span><span class="o">.</span><span class="n">path</span> <span class="o">!=</span> <span class="n">new_file_obj</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+                <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_system</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">operation</span><span class="p">)(</span>
+                    <span class="n">source_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">,</span>
+                    <span class="n">target_obj</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rename_handler</span><span class="o">.</span><span class="n">get_new_name</span><span class="p">(</span><span class="n">file_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">),</span>
+                <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="renameit.core.job_runners.Job.run" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">run</span><span class="p">()</span></code>
+
+<a href="#renameit.core.job_runners.Job.run" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>A job needs to run at some point.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>renameit/core/job_runners.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A job needs to run at some point.&quot;&quot;&quot;</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running job </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">file_obj</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_system</span><span class="o">.</span><span class="n">list_objects</span><span class="p">():</span>
+        <span class="n">new_file_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rename_handler</span><span class="o">.</span><span class="n">get_new_name</span><span class="p">(</span><span class="n">file_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">file_obj</span><span class="o">.</span><span class="n">path</span> <span class="o">!=</span> <span class="n">new_file_obj</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_system</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">operation</span><span class="p">)(</span>
+                <span class="n">source_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">,</span>
+                <span class="n">target_obj</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rename_handler</span><span class="o">.</span><span class="n">get_new_name</span><span class="p">(</span><span class="n">file_obj</span><span class="o">=</span><span class="n">file_obj</span><span class="p">),</span>
+            <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="renameit.core.job_runners.JobRunnerStandard" class="doc doc-heading">
+        <code>JobRunnerStandard</code>
+
+
+<a href="#renameit.core.job_runners.JobRunnerStandard" class="headerlink" title="Permanent link">#</a></h3>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>A simple implementation for executing jobs in sequence.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/job_runners.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">JobRunnerStandard</span><span class="p">(</span><span class="n">IJobRunner</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A simple implementation for executing jobs in sequence.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">job</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">jobs</span><span class="p">:</span>
+            <span class="n">job</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h2 id="config">Config<a class="headerlink" href="#config" title="Permanent link">#</a></h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<h3 id="renameit.core.config.project" class="doc doc-heading">
+          <code>project</code>
+
+
+<a href="#renameit.core.config.project" class="headerlink" title="Permanent link">#</a></h3>
+
+  <div class="doc doc-contents first">
+  
+      <p>Config classes, simply extending the pydantic BaseModel are defined here to provide
+a contract for users to abide by. Schema definition, validation, serialization and
+deserialization are all handled within these classes.</p>
+<p>We can expose real object instances from within these contracts/configs that can be used
+later by the app logic in other modules and functions.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="renameit.core.config.project.FileSystemConfig" class="doc doc-heading">
+        <code>FileSystemConfig</code>
+
+
+<a href="#renameit.core.config.project.FileSystemConfig" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>FileSystemConfig.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/config/project.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">FileSystemConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;FileSystemConfig.&quot;&quot;&quot;</span>
+
+    <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+
+    <span class="nd">@validator</span><span class="p">(</span><span class="s2">&quot;type&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">type_validation</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">file_systems_map</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Unknow type `</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">`, only allowed: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_systems_map</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="nf">get_file_system</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">IFileSystem</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">file_systems_map</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">type</span><span class="p">](</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="renameit.core.config.project.JobConfig" class="doc doc-heading">
+        <code>JobConfig</code>
+
+
+<a href="#renameit.core.config.project.JobConfig" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>JobConfig.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/config/project.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">JobConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;JobConfig.&quot;&quot;&quot;</span>
+
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">operation</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;rename&quot;</span><span class="p">,</span> <span class="s2">&quot;copy&quot;</span><span class="p">]</span>
+    <span class="n">file_system_config</span><span class="p">:</span> <span class="n">FileSystemConfig</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">alias</span><span class="o">=</span><span class="s2">&quot;file_system&quot;</span><span class="p">)</span>
+    <span class="n">rename_handler_config</span><span class="p">:</span> <span class="n">RenameHandlerConfig</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">alias</span><span class="o">=</span><span class="s2">&quot;rename_handler&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_job</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Job</span><span class="p">,</span> <span class="kc">None</span><span class="p">]:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Job</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">file_system</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">file_system_config</span><span class="o">.</span><span class="n">get_file_system</span><span class="p">(),</span>
+                <span class="n">rename_handler</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rename_handler_config</span><span class="o">.</span><span class="n">get_handler</span><span class="p">(),</span>
+                <span class="n">operation</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">operation</span><span class="si">}</span><span class="s2">_object&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">NotImplementedError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping job </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+            <span class="k">return</span> <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="renameit.core.config.project.ProjectConfig" class="doc doc-heading">
+        <code>ProjectConfig</code>
+
+
+<a href="#renameit.core.config.project.ProjectConfig" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>UserProjectConfig.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/config/project.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">ProjectConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;UserProjectConfig.&quot;&quot;&quot;</span>
+
+    <span class="n">version</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;0.1&quot;</span>
+    <span class="n">jobs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">JobConfig</span><span class="p">]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">create_new</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config_path</span><span class="p">,</span> <span class="n">config_dir</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;ProjectConfig&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="o">**</span><span class="n">load_config</span><span class="p">(</span><span class="n">user_file_path</span><span class="o">=</span><span class="n">config_path</span><span class="p">,</span> <span class="n">user_dir_path</span><span class="o">=</span><span class="n">config_dir</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">get_jobs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Job</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Get a list of Job objects from their corresponding list of JobConfig.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Job]: List of Job objects</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">job</span> <span class="k">for</span> <span class="n">job_config</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">jobs</span> <span class="k">if</span> <span class="p">(</span><span class="n">job</span> <span class="o">:=</span> <span class="n">job_config</span><span class="o">.</span><span class="n">get_job</span><span class="p">())</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="renameit.core.config.project.ProjectConfig.get_jobs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_jobs</span><span class="p">()</span></code>
+
+<a href="#renameit.core.config.project.ProjectConfig.get_jobs" class="headerlink" title="Permanent link">#</a></h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get a list of Job objects from their corresponding list of JobConfig.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="renameit.core.job_runners.Job" href="#renameit.core.job_runners.Job">Job</a>]</code>
+          </td>
+          <td><p>List[Job]: List of Job objects</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>renameit/core/config/project.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_jobs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Job</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Get a list of Job objects from their corresponding list of JobConfig.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        List[Job]: List of Job objects</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">job</span> <span class="k">for</span> <span class="n">job_config</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">jobs</span> <span class="k">if</span> <span class="p">(</span><span class="n">job</span> <span class="o">:=</span> <span class="n">job_config</span><span class="o">.</span><span class="n">get_job</span><span class="p">())</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="renameit.core.config.project.RenameHandlerConfig" class="doc doc-heading">
+        <code>RenameHandlerConfig</code>
+
+
+<a href="#renameit.core.config.project.RenameHandlerConfig" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>RenameHandlerConfig.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>renameit/core/config/project.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">RenameHandlerConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;RenameHandlerConfig.&quot;&quot;&quot;</span>
+
+    <span class="nb">type</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">args</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+
+    <span class="nd">@validator</span><span class="p">(</span><span class="s2">&quot;type&quot;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">type_validation</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">handlers_map</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Unknow type `</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">`, only allowed: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">handlers_map</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="nf">get_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">IHandler</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">handlers_map</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">type</span><span class="p">](</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+
+<h3 id="renameit.core.config.parse" class="doc doc-heading">
+          <code>parse</code>
+
+
+<a href="#renameit.core.config.parse" class="headerlink" title="Permanent link">#</a></h3>
+
+  <div class="doc doc-contents first">
+  
+      <p>This module acts as the center point for reconciling user input from config files, env vars
+and other external configuration services.</p>
+<p>Everything related to loading, parsing and rendering configurations can be implemented here.</p>
+<p>The result data can be used as input for config classes like the ones in
+<a class="autorefs autorefs-internal" href="#renameit.core.config.project">project</a></p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h4 id="renameit.core.config.parse.load_config" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">load_config</span><span class="p">(</span><span class="n">user_file_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">user_dir_path</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+<a href="#renameit.core.config.parse.load_config" class="headerlink" title="Permanent link">#</a></h4>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Load configurations from files.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>user_file_path</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Path to the base config file. Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>user_dir_path</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Path to the extension config directory. Defaults to None.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="collections.OrderedDict">OrderedDict</span></code>
+          </td>
+          <td><p>Single dict with all the loaded config</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>renameit/core/config/parse.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_config</span><span class="p">(</span><span class="n">user_file_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">user_dir_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">OrderedDict</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Load configurations from files.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        user_file_path (str, optional): Path to the base config file. Defaults to None.</span>
+<span class="sd">        user_dir_path (str, optional): Path to the extension config directory. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Single dict with all the loaded config</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">user_file_path</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;user_file_path&quot;</span><span class="p">:</span> <span class="n">user_file_path</span><span class="p">})</span>
+
+    <span class="k">if</span> <span class="n">user_dir_path</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;user_dir_path&quot;</span><span class="p">:</span> <span class="n">user_dir_path</span><span class="p">})</span>
+
+    <span class="n">config</span> <span class="o">=</span> <span class="n">confight</span><span class="o">.</span><span class="n">load_user_app</span><span class="p">(</span><span class="s2">&quot;renameit&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">config</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../file_systems/" class="md-footer__link md-footer__link--next" aria-label="Next: FileSystems" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              FileSystems
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

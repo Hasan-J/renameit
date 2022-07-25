@@ -13,7 +13,7 @@
     
     
       
-        <title>renameit documentation</title>
+        <title>renameit</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="renameit documentation" class="md-header__button md-logo" aria-label="renameit documentation" data-md-component="logo">
+    <a href="." title="renameit" class="md-header__button md-logo" aria-label="renameit" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -89,7 +89,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            renameit documentation
+            renameit
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -129,13 +129,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="renameit documentation" class="md-nav__button md-logo" aria-label="renameit documentation" data-md-component="logo">
+    <a href="." title="renameit" class="md-nav__button md-logo" aria-label="renameit" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    renameit documentation
+    renameit
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -157,47 +157,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -230,6 +192,20 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ref/core/" class="md-nav__link">
+        Core
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -285,28 +261,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -319,21 +273,179 @@
                 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">#</a></h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
+<div class="toc">
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a><ul>
+<li><a href="#configure-your-jobs">Configure your jobs</a></li>
+<li><a href="#run-jobs">Run jobs:</a><ul>
+<li><a href="#using-virtual-environment-or-pex-file">Using virtual environment or pex file</a></li>
+<li><a href="#using-docker">Using docker:</a></li>
 </ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">#</a></h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+</li>
+<li><a href="#job-configuration-schema">Job Configuration schema</a></li>
+</ul>
+</li>
+<li><a href="#file-systems">File systems</a></li>
+<li><a href="#rename-handlers">Rename handlers</a></li>
+</ul>
+</div>
+<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h1>
+<p>You can directly install it within your virtual environment:</p>
+<pre><code>pip install renameit
 </code></pre>
+<p>Additional library support for a specific cloud provider can be installed as extra requirement:</p>
+<pre><code>pip install renameit[aws, azure, google]
+</code></pre>
+<hr />
+<p>If you don't want to worry about cluttering an existing production environment, we provide
+a <a href="https://pex.readthedocs.io/en/latest/">PEX</a> file for each release that can be directly downloaded:</p>
+<pre><code>curl https://github.com/Hasan-J/renameit/releases/download/{release-name}/renameit.pex -o renameit
+</code></pre>
+<p>We also publish a docker image to <a href="https://hub.docker.com/r/hasanj/renameit">docker hub</a> for each release:</p>
+<pre><code>docker pull hasanj/renameit:&lt;tag-name&gt;
+</code></pre>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> Both pex file and docker image contain all dependencies</p>
+</blockquote>
+<h1 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h1>
+<p><code>renameit</code> needs some kind of user input to tell it what kind of jobs to run.</p>
+<p>Users can basically define a list of jobs that will be run in sequence (job parralalism could be introduced in later versions).</p>
+<h3 id="configure-your-jobs">Configure your jobs<a class="headerlink" href="#configure-your-jobs" title="Permanent link">#</a></h3>
+<p>Provide job configuration file (.ini, .toml, .json, .yaml, .yml) in the user directory,
+<code>~/.config/renameit/config.&lt;extension&gt;</code> for <strong>Linux and macos</strong> or <code>%USERPROFILE%/.config/renameit/config.&lt;extension&gt;</code>
+for <strong>windows</strong>.</p>
+<p><em>config.yaml example</em></p>
+<pre><code class="language-yaml">version: 0.1
+jobs:
+  - name: local_job_1
+    operation: copy
+    file_system:
+      type: local
+      args:
+        source_dir: /data/source_files
+        target_dir: /data/target_files
+        recursive: True
+    rename_handler:
+      type: basic
+      args:
+        method: add_prefix
+        value: TEST_PREFIX_
+</code></pre>
+<h3 id="run-jobs">Run jobs:<a class="headerlink" href="#run-jobs" title="Permanent link">#</a></h3>
+<h4 id="using-virtual-environment-or-pex-file">Using virtual environment or pex file<a class="headerlink" href="#using-virtual-environment-or-pex-file" title="Permanent link">#</a></h4>
+<pre><code>renameit
+</code></pre>
+<p>or with a custom config file:</p>
+<pre><code>renameit --config-path /custom/path/config.yaml
+</code></pre>
+<h4 id="using-docker">Using docker:<a class="headerlink" href="#using-docker" title="Permanent link">#</a></h4>
+<p>Docker run needs some additional mount points for the config file, 
+suppose you have a local dir that contains the config file <code>/my/configs/config.yaml</code></p>
+<pre><code>docker run --rm -v '/my/configs:/configs' hasanj/renameit:&lt;tag-name&gt; \
+  renameit --config-path /configs/config.yaml
+</code></pre>
+<p>If you're using the <code>local</code> file system, you also need to provide mount point for directories that should contain
+source and renamed files:</p>
+<pre><code>docker run --rm \
+  -v '/my/configs:/configs' \
+  -v '/data:/data' \
+  hasanj/renameit:&lt;tag-name&gt; renameit --config-path /configs/config.yaml
+</code></pre>
+<p><em>Optionally change log level</em></p>
+<p>Define environment variable <code>LOGLEVEL</code> before running the command, default is <code>DEBUG</code>.</p>
+<h3 id="job-configuration-schema">Job Configuration schema<a class="headerlink" href="#job-configuration-schema" title="Permanent link">#</a></h3>
+<p>Lets walk through the above example to understand the different components needed:</p>
+<ul>
+<li>First <code>version</code> key defines the config schema version (fixed/latest is <code>0.1</code>)</li>
+<li><code>jobs</code> key contains the list of jobs the user needs to run</li>
+<li>
+<p>Each job dict needs to have the following key value pairs:</p>
+<ul>
+<li><strong>name</strong>: user-defined string value</li>
+<li><strong>operation</strong>: can be either <code>copy</code> or <code>rename</code> (depends on <code>file_system</code>)</li>
+<li><strong>file_system</strong>: the file storage system where files are located (<a href="#file-systems">available file systems</a>)</li>
+<li><strong>rename_handler</strong>: specifies what type of file name transformation should be done 
+  and how (<a href="#rename-handlers">available rename handlers</a>)</li>
+</ul>
+</li>
+</ul>
+<p><em>run the above job definition</em></p>
+<p>Assuming we are running on linux with local dir <code>/data/source_files</code> containing 2 files:</p>
+<pre><code>/data/source_files/file1.txt
+/data/source_files/subfolder/file2.txt
+</code></pre>
+<p>output:</p>
+<pre><code class="language-bash">/home/foo:~$ export LOGLEVEL=INFO; renameit --config-path config.yaml
+2022-01-01 04:00:00 PM [INFO] Parsing 'yaml' config file from '/home/foo/config.yaml'
+2022-01-01 04:00:00 PM [INFO] Running job local_job_1
+2022-01-01 04:00:00 PM [INFO] Copying: /data/source_files/file1.txt to /data/target_files/TEST_PREFIX_file1.txt
+2022-01-01 04:00:00 PM [INFO] Copying: /data/source_files/subfolder/file2.txt to /data/target_files/subfolder/TEST_PREFIX_file2.txt
+</code></pre>
+<h1 id="file-systems">File systems<a class="headerlink" href="#file-systems" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th align="left">description</th>
+<th>operations</th>
+<th>docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>local</td>
+<td align="left">Operate on local file system</td>
+<td>copy, rename</td>
+<td><a href="https://hasan-j.github.io/renameit/ref/file_systems/#renameit.file_systems.local.FileSystemLocal">FileSystemLocal</a></td>
+</tr>
+<tr>
+<td>azure_datalake_storage</td>
+<td align="left">Operate on azure datalake storage</td>
+<td>rename</td>
+<td><a href="https://hasan-j.github.io/renameit/ref/file_systems/#renameit.file_systems.azure.FileSystemAzureDatalakeStorage">FileSystemAzureDatalakeStorage</a></td>
+</tr>
+<tr>
+<td>aws_s3</td>
+<td align="left">Operate on aws s3 storage</td>
+<td>copy</td>
+<td><a href="https://hasan-j.github.io/renameit/ref/file_systems/#renameit.file_systems.aws.FileSystemAwsS3">FileSystemAwsS3</a></td>
+</tr>
+<tr>
+<td>google_cloud_storage</td>
+<td align="left">Operate on google cloud storage</td>
+<td>copy, rename</td>
+<td><a href="https://hasan-j.github.io/renameit/ref/file_systems/#renameit.file_systems.google.FileSystemGoogleCloudStorage">FileSystemGoogleCloudStorage</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rename-handlers">Rename handlers<a class="headerlink" href="#rename-handlers" title="Permanent link">#</a></h1>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th align="left">description</th>
+<th align="left">docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic</td>
+<td align="left">Provides simple file name transformations</td>
+<td align="left"><a href="https://hasan-j.github.io/renameit/ref/handlers/#renameit.handlers.basic.BasicHandler">BasicHandler</a></td>
+</tr>
+<tr>
+<td>regex</td>
+<td align="left">Use regular expressions to match and replace patterns in file names</td>
+<td align="left"><a href="https://hasan-j.github.io/renameit/ref/handlers/#renameit.handlers.regex.RegexHandler">RegexHandler</a></td>
+</tr>
+<tr>
+<td>datetime</td>
+<td align="left">Use datetime values and place them in file names</td>
+<td align="left"><a href="https://hasan-j.github.io/renameit/ref/handlers/#renameit.handlers.datetime.DateTimeHandler">DateTimeHandler</a></td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -350,13 +462,13 @@ docs/
       
       
         
-        <a href="ref/file_systems/" class="md-footer__link md-footer__link--next" aria-label="Next: FileSystems" rel="next">
+        <a href="ref/core/" class="md-footer__link md-footer__link--next" aria-label="Next: Core" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              FileSystems
+              Core
             </div>
           </div>
           <div class="md-footer__button md-icon">
