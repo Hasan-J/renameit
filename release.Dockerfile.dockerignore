@@ -1,0 +1,5 @@
+# Ignore everything
+*
+
+# Allow build dir only
+!dist/

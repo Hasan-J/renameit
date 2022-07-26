@@ -1,0 +1,18 @@
+site_name: renameit
+nav:
+  - Home: index.md
+  - Reference:
+    - Core: ref/core.md
+    - FileSystems: ref/file_systems.md
+    - Handlers: ref/handlers.md
+
+plugins:
+  - autorefs
+  - mkdocstrings
+
+theme:
+  name: "material"
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
