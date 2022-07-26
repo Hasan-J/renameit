@@ -4,7 +4,8 @@ and other external configuration services.
 
 Everything related to loading, parsing and rendering configurations can be implemented here.
 
-The result data can be used as input for config classes like the ones in ./project.py
+The result data can be used as input for config classes like the ones in
+[project][renameit.core.config.project]
 """
 
 from collections import OrderedDict

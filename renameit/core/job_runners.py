@@ -1,5 +1,11 @@
 # pylint: disable=logging-fstring-interpolation
-"""Add job runner classes that will run the renaming jobs"""
+"""This module contains job runner classes that will run the renaming jobs
+
+The module contains the following:
+
+- `Job` - Class representing renaming job.
+- `JobRunnerStandard` - Implementation for standard job runner.
+"""
 
 
 import logging

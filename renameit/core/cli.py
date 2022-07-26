@@ -1,17 +1,19 @@
 """Main module to expose internal functions as command lines."""
 
+from typing import Optional
+
 import fire
 
 from .config import ProjectConfig
 from .job_runners import JobRunnerStandard
 
 
-def renameit(config_path: str = None, config_dir: str = None):
+def renameit(config_path: Optional[str] = None, config_dir: Optional[str] = None):
     """This is the main API that is used to trigger renaming jobs.
 
     Args:
-        config (str, optional): File path to configs overriding the default path. Defaults to None.
-        config_dir (str, optional): Dir path to other config files if needed. Defaults to None.
+        config_path: File path to configs overriding the default path. Defaults to None.
+        config_dir: Dir path to other config files if needed. Defaults to None.
     """
     config = ProjectConfig.create_new(config_path=config_path, config_dir=config_dir)
 

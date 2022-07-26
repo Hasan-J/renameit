@@ -3,8 +3,7 @@
 {
 	"name": "renameit",
 	"dockerComposeFile": [
-		"docker-compose.yml",
-		"docker-compose-custom.yml"
+		"docker-compose.yml"
 	],
 	"service": "renameit",
 	"workspaceFolder": "/workspaces",
@@ -27,7 +26,8 @@
 	"extensions": [
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"njpwerner.autodocstring"
+		"njpwerner.autodocstring",
+		"eamodio.gitlens"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
