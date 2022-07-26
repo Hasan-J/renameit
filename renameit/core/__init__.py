@@ -1,7 +1,7 @@
 import logging
 import os
 
-__version__ = "0.1.0-alpha.dev3"
+__version__ = "0.1.0-alpha.0"
 
 LOGLEVEL = os.environ.get("LOGLEVEL", "WARNING").upper()
 logging.basicConfig(
